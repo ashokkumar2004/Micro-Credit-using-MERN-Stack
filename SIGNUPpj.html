@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+         {
+            box-sizing: border-box;
+          }
+          
+          body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+          }
+          
+          .login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          
+          .form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+          }
+          
+          .logo {
+            display: block;
+            margin: 0 auto 30px;
+            width: 80px;
+          }
+          
+          input[type="text"],
+          input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f0f0f0;
+          }
+          
+          label.checkbox {
+            display: block;
+            margin-bottom: 20px;
+          }
+          
+          button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #2c3e50;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #34495e;
+          }
+          
+          p.message {
+            margin-top: 20px;
+            text-align: center;
+          }
+          
+          a {
+            color: #2c3e50;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: underline;
+          }
+    </style>
+  </head>
+  <body style="background-image:url('log5.png');background-size:cover">
+    <div class="login-page">
+      <div class="form">
+        <form class="login-form" action="mongodb://localhost:27017">
+          <img src="log1.png" alt="Logo" class="logo" height="100">
+          <input type="text" placeholder="Email"/>
+          <input type="password" placeholder="Password"/>
+          <label class="checkbox">
+            <input type="checkbox"/> Remember me
+          </label>
+          <button>Sign in</button>
+          <p class="message">Forgot password? <a href="#">Reset it</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

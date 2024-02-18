@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+      img {
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+      body  {
+        background-image: url("img_tree.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .container {
+        text-align: center;
+      }
+      .rounded-circle {
+        border: 2px solid green;
+        border-radius: 50%;
+      }
+      #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    @keyframes rollRight {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .rolling-container {
+      overflow: hidden;
+      width: 100%;
+      height: 40px;
+      background-color:black;
+      position: relative;
+      border-radius: 15px;
+    }
+    .rolling-text {
+      
+      animation: rollRight 25s linear infinite; /* Adjust the duration as needed */
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    /* Additional styling for the text items (customize as needed) */
+    .rolling-text p {
+      margin: 0;
+      padding: 10px;
+      background-color: rgb(26, 24, 24);
+      border-radius: 15px;
+      flex-shrink: 0;
+    }
+    /**/
+    h3 {
+      color: white;
+    }
+
+    .artist-image {
+      border-radius: 50%;
+      margin: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .artist-image:hover {
+      transform: scale(1.1);
+    }
+    
+    </style>
+</head>
+<body style="background-image: url('bg2.jpg');background-size:cover">
+  <video id="background-video" autoplay muted loop>
+    <source src="video (2160p).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+  <div class="container">
+    <h1 style="font-family: 'Times New Roman', Times, serif; color: #ffffff; text-align: center; padding: 20px; position: relative;">
+      CONCERTS
+      <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 2px; background: linear-gradient(to right, #fff, #ccc, #fff);"></span>
+    </h1>
+  </div>
+  
+  
+  <div class="container">
+    <nav class="navbar navbar-expand-sm" style="background-color: rgba(183, 210, 233, 0.7);border-radius:20px;">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              <button type="button" class="btn btn-success">MUSIC</button>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link" style="color:white"><button type="button" class="btn btn-LightGrey">HOME</button></a></li>
+          <li class="nav-item"><a href="#" class="nav-link" style="color:white"><button type="button" class="btn btn-LightGrey">ABOUT US</button></a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" style="color:white"><button type="button" class="btn btn-LightGrey">CONTACT</button></a></li>
+          <li class="nav-item"><a href="CONCERTSpj.html" class="nav-link" style="color:white"><button type="button" class="btn btn-LightGrey">EVENTS</button></a></li>
+          <li class="nav-item"><a href="TRENDING.html" class="nav-link" style="color:white"><button type="button" class="btn btn-LightGrey">TRENDING</button></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <br>
+  
+    <div class="d-flex justify-content-center">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width:55%;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0"  class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="a111.jpg" alt="taj" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="cc2.jpg" alt="ani" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="c3.jpg" alt="gate" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="ii.jpg" alt="ooty" class="d-block" style="width:100%">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="rolling-container">
+      <div class="rolling-text">
+        <p style="color: white;">Music concerts offer a unique and immersive live experience that cannot be replicated by recorded music. The energy and connection between the performers and the audience create a special atmosphere.Live music has a powerful emotional impact, capable of evoking a range of emotions. Whether it's joy, excitement, nostalgia, or introspection, concerts provide a platform for artists to connect with the audience on a deep emotional level.Concerts create lasting memories for both artists and fans. Whether it's a powerful performance, a surprise collaboration, or a special encore, these moments become cherished memories for those in attendance.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container" style="background-color: rgba(93, 95, 96, 0.7);border-radius: 40px;padding: 20px;text-align: center;">
+    <h3>TOP ARTISTS</h3>
+    <img src="xxx.jpg" alt="Artist 1" class="artist-image" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" height="190" width="190">
+    <img src="a2.jpg" alt="Artist 2" class="artist-image" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" height="200" width="200">
+    <img src="a3.jpeg" alt="Artist 3" class="artist-image" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" height="200" width="200">
+    <img src="a4.jpg" alt="Artist 4" class="artist-image" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" height="200" width="200">
+    <br><br>
+  </div>
+  <br><br>
+  <div class="container" style="background-color: rgba(93, 95, 96, 0.7);border-radius: 40px;padding: 20px;text-align: center;"><br>
+    <h3>Crazy Cities</h3>
+    <br>
+    <img src="chni.jpg" onmouseenter="big(this)" onmouseleave="normal(this)" height=50% width=30% alt="1" style="border-radius: 20px;">&emsp;&emsp;
+    <img src="kol.jpg" onmouseenter="big(this)" onmouseleave="normal(this)" height=50% width=30% alt="2" style="border-radius: 20px;">
+    <br><br>
+    <img src="mm.jpg" onmouseenter="big(this)" onmouseleave="normal(this)" height=50% width=30% alt="3" style="border-radius: 20px;">&emsp;&emsp;
+    <img src="bang.jpg" onmouseenter="big(this)" onmouseleave="normal(this)" height=50% width=30% alt="4" style="border-radius: 20px;"><br><br><br>
+  </div>
+  <br><br>
+  <div class="container" style="background-color:rgb(86, 94, 102);text-align:left">
+    <br>
+    <h2 style="text-align: center;color:#ffffff">About Us</h2>
+    <br>
+    <p style="color: #ffffff;">Welcome to [Your Website Name], where the magic of live music meets seamless event planning. We are passionate about bringing people together through the universal language of music, and our mission is to simplify the process of organizing and booking unforgettable music concerts.At [Your Website Name], we understand the challenges that event organizers and artists face when it comes to coordinating and promoting live performances. That's why we've created a platform that not only connects talented artists with eager audiences but also streamlines the entire concert booking experience.Our user-friendly interface is designed to cater to both event organizers and artists, offering a one-stop solution for discovering, booking, and promoting music concerts. Whether you're an emerging artist seeking your next gig or an event organizer looking to curate an unforgettable musical experience, [Your Website Name] is here to make the process smooth and enjoyable.</p>
+    <h5 style="color: #ffffff;">Key Features:</h5>
+    <p> 
+      <ul><li style="color: #ffffff;">Comprehensive Artist Profiles: Discover a diverse range of talented artists with detailed profiles showcasing their musical style, experience, and previous performances.</li>
+      
+      <li style="color: #ffffff;">Intuitive Booking System: Our streamlined booking system allows event organizers to browse through artists, check availability, and secure bookings effortlessly.</li>
+      
+      <li style="color: #ffffff;">Event Promotion Tools: Leverage our promotional tools to create buzz around your concert. From customizable event pages to social media integration, we've got you cov</li>
+      
+      <li style="color: #ffffff;">Secure Payment Processing: Facilitate secure transactions with our built-in payment processing system, ensuring a hassle-free experience for both artists and organizers.</li>
+      
+      <li style="color: #ffffff;">Community Engagement: Foster a vibrant community of music lovers, artists, and event organizers. Connect with like-minded individuals, share experiences, and stay updated on the latest trends in the music industry.</li>
+      
+      <li style="color: #ffffff;">Rating and Review System: Build trust within the community by providing a platform for artists and organizers to share their experiences through ratings and reviews.</li>
+      
+      <p style="color: #ffffff;">At [Your Website Name], we believe that every music concert is an opportunity to create lasting memories. Join us in celebrating the power of live music and let us be your partner in bringing extraordinary performances to audiences around the world. Whether you're a musician ready to shine or an event organizer with a vision, let [Your Website Name] be the stage where your music journey unfolds.</p></p>
+      <br><br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;
+      <a href=""><img src="instagram.png" alt="wait pannu vro" height="50" width="50"></a>&emsp;&emsp;
+      <a href=""><img src="facebook.png" alt="wait pannu vro" height="50" width="50"></a>&emsp;&emsp;
+      <a href=""><img src="email.png" alt="wait pannu vro" height="50" width="50"></a>&emsp;&emsp;
+      <br><br>
+      <p style="text-align: center;color:#ffffff">@ 2024 praveen.inc</p>
+      <br>
+  </div>
+
+  <script>
+    function bigImg(img) {
+      img.style.border = "4px solid green";
+    }
+    function normalImg(img) {
+      img.style.border = "2px solid green";
+    }
+    function bigImg(element) {
+      element.style.transform = "scale(1.1)";
+    }
+
+    function normalImg(element) {
+      element.style.transform = "scale(1)";
+    }
+    function big(element) {
+      element.style.transform = "scale(1.2)";
+    }
+
+    function normal(element) {
+      element.style.transform = "scale(1)";
+    }
+    </script>
+</body>
+</html>
