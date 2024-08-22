@@ -1,0 +1,83 @@
+/* src/components/Home.css */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url('https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?w=1060&t=st=1720699122~exp=1720699722~hmac=35d28a5771ef8514106f2dade1bdb5a651a1198e40a785a863ea13f89054b000') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .home-header {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background for better text readability */
+    width: 100%;
+  }
+  
+  .home-header h1 {
+    font-size: 42px;
+    margin: 0;
+  }
+  
+  .home-header p {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  
+  .home-button {
+    color: white;
+    background-color:#007bff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .home-button:hover {
+    background-color:#007bff;
+  }
+  
+  .home-explore {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for the explore section */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .explore-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .home-explore h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .home-explore p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .explore-button {
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .explore-button:hover {
+    background-color: #007bff;
+  }
+  

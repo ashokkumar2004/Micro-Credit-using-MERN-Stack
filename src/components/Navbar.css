@@ -1,0 +1,34 @@
+/* Common navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* Add other common styles here */
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Background color for home page */
+.navbar-home {
+  background-color: #f0f0f0; /* Replace with desired background color */
+}
+
+/* No background for other pages */
+.navbar:not(.navbar-home) {
+  background-color: transparent;
+}
